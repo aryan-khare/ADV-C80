@@ -1,46 +1,35 @@
+
 <html>
-<head>
-	<title>Guest List</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="Tmain.js"></script>
+    <head>
+        <title>Guest List</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body style="text-align: center;">
+        <h1>Guest List</h1>
+        <input type="text" placeholder="Enter Name" id="Enter_name">
+        <button onclick="Submit()">Submit</button>
+        <hr>
+        <div id="Display_names">
 
-</head>
-<body>
-<center>
-<h3 style="margin-top: 20px; margin-bottom: 20px; ">
-	Guest List
-</h3>
+        </div>
+        <hr>
+        <button onclick="Show_list()">Show</button>
+        <div id="Show_names">
 
-<div id="rows">
+        </div>
+        <hr>
+        <hr>
+        <button onclick="sorting()">Sort List</button>
+        <div id="Sorted_names">
 
-<input type="text" placeholder="Enter name" id="name1">
-<button onclick="submit()" id="submit_button">Submit</button>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-	
-<hr>
+        </div>
+        <hr>
+        <hr>
+        <input type="text" placeholder="Search Name" id="Search_name">
+        <button onclick="Search()">Search</button>
+        <div id="Search_names">
 
-<div id="display_name">
-</div>
-<hr>
-	<div id="Show1"><h3 id="hd1">Guest List</h3>
-		<button onclick="show()" id="show">Show</button>
-		<p id="p1"></p></div>
-	
-<hr>
-<button onclick="sorting()" id="sort_button">
-	Sorted List
-</button>
-
-
-	<div id="sorted"></div>
-    </div>
-	<hr>
-	<input type="text" placeholder="Search name" id="s1">&nbsp;
-    <!--add the below code for button here-->
-	<!--<button onclick="searching()" id="srch">Search</button>-->
-	<p id="p2"></p>
-    
-</center>
-		
-</body>
+        </div>
+    </body>
 </html>
